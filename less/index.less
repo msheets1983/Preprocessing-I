@@ -4,6 +4,10 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+@heading-font: 'Lato', sans-serif;
+@main-font: 'Montserrat', sans-serif;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,10 +54,114 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
 }
 
 html, body {
     height: 100%;
 }
 
+h1{
+	font-size: 2.5rem;
+	font-family:@heading-font;
+	letter-spacing: 1px;
+	padding: .5rem;
+}//close of the h1
+	
+h2{
+	font-size: 2rem;
+	font-family:@heading-font;
+	letter-spacing: 1px;
+	padding: .5rem;
+}//close of the h2
+
+h3{
+	font-size: 1.5rem;
+	font-family:@heading-font;
+	letter-spacing: 1px;
+	padding: .5rem;
+}//close of the h3
+
+p{
+	font-size: 1rem;
+	font-family:@main-font;
+	letter-spacing: 1px;
+	padding: .5rem;
+	
+}
+
+.NAVIGATION header div nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+   } 
+
+header{
+	
+	nav {
+		margin: 1%;
+	
+	} //close of navigation
+	a {
+		text-align: center;
+		color: gray;
+		padding: 1rem;
+	}//close of links
+}//close of header
+
+.otherContent {
+	display: flex;
+	background: grey;
+	padding: 25px;
+	border-radius: 8px;
+	img{
+		border-radius: 8px;
+		width: 250px;
+	}
+	.sectonOne{
+		justify-content: center;
+	}
+}
+
+.otherContent2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+	.sectionTwoCard1{
+		width: 49%;
+	}
+	.sectionTwoCard2{
+		width: 49%;
+		}
+}
+
+footer{
+	background: grey;
+	padding: 3%;
+	text-align: center;
+	margin-top: 10px;
+}
+#workHistory {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	
+	td, th {
+		border: 1px solid #ddd;s
+		padding: 8px;
+	}// close of td, th
+
+	tr:nth-child(even){
+		background-color: #f2f2f2;
+	}//close of nth-child
+
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: gray;
+		color: white;
+	  }//close of th
+  }//close of workHistory
